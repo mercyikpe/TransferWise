@@ -1,0 +1,155 @@
+/* -------------------------------- NavBar ------------------------------------- */
+/* --------------------------------- Money transfer --------------------------- */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-top: 10px;
+  background-color: #f9f9f9;
+  width: 430px;
+  height: fit-content;
+  left: 220px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-size: 14px;
+}
+
+.money-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content .top {
+  background: #fff;
+  color: #000;
+  text-align: left;
+  padding: 30px;
+}
+
+.dropdown-content .bottom {
+  text-align: left;
+  padding: 30px;
+}
+
+/* ------------------------------------ borderless Account ------------------------------ */
+.borderless-dropdown-content {
+  display: none;
+  position: absolute;
+  margin-top: 10px;
+  background-color: #f9f9f9;
+  width: 430px;
+  height: fit-content;
+  left: 400px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-size: 14px;
+}
+
+.borderless-drop:hover .borderless-dropdown-content {
+  display: block;
+}
+
+.borderless-dropdown-content .top {
+  background: #fff;
+  color: #000;
+  text-align: left;
+  padding: 30px;
+}
+
+.borderless-dropdown-content .bottom {
+  text-align: left;
+  padding: 30px;
+}
+
+/* ------------------------- business dropdown ------------------------------------ */
+.business-dropdown-content {
+  display: none;
+  position: absolute;
+  margin-top: 10px;
+  background-color: #f9f9f9;
+  width: 430px;
+  height: fit-content;
+  left: 490px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-size: 14px;
+}
+
+.business-drop:hover .business-dropdown-content {
+  display: block;
+}
+
+.business-dropdown-content .top {
+  background: #fff;
+  color: #000;
+  text-align: left;
+  padding: 30px;
+}
+
+.business-dropdown-content .bottom {
+  text-align: left;
+  padding: 30px;
+}
+
+/* ------------------------------ EN dropdown ----------------------------- */
+.en-dropdown-content {
+  display: none;
+  position: absolute;
+  margin-top: 10px;
+  background-color: #f9f9f9;
+  width: 300px;
+  height: fit-content;
+  left: 700px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-size: 14px;
+}
+
+.en-drop:hover .en-dropdown-content {
+  display: block;
+}
+
+.en-dropdown-content .top {
+  background: #fff;
+  color: #000;
+  text-align: left;
+  padding: 30px;
+}
+
+.en-dropdown-content .bottom {
+  text-align: left;
+  padding: 30px;
+  list-style: none;
+  max-height: 350px;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.en-dropdown-content .bottom li {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.en-dropdown-content .bottom li > #drop-anchor:hover {
+  color: #00b9ff !important;
+}
+
+.active {
+  color: #00b9ff !important;
+}
+/* ---------------------general style for drop down menus -------------------------- */
+
+#drop-anchor {
+  color: #2e4369 !important;
+  font-weight: 600;
+}
+.drop-option,
+.drop-anchor {
+  color: #2e4369;
+  font-weight: 600;
+}
+
+.drop-icon {
+  margin-bottom: 5px;
+}
