@@ -1,5 +1,5 @@
 <template>
-<section class="WhatOurCustomerSay">
+<section class="WhatOurCustomerSay d-none d-md-block d-lg-block d-xl-block">
   <div class="vedio-testimonials">
     <video class="vedio-m" autoplay="true" loop :src="imagesrc">
       <!-- <source >    -->

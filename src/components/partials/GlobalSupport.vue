@@ -1,17 +1,17 @@
 <template>
   <section id="customer-support-section" class="py-5">
     <div class="container py-5">
-      <div class="row">
-        <div class="col-xs-12 col-md-6 text-xs-center text-md-left">
-          <h1 class="customer-support-title">Global support in a range of languages<span class="colored-dot">.</span> </h1>
-          <p class="mt-3">We don’t do complicated, automated systems. We have offices around the world, full of people ready to help you. Whenever you need it.</p>
+      <div class="row ">
+        <div class="col-xs-12 col-md-6 text-md-left text-section">
+          <h2 class="customer-support-title">Global support in a range of languages<span class="colored-dot">.</span> </h2>
+          <p class="mt-3 customer-support-text">We don’t do complicated, automated systems. We have offices around the world, full of people ready to help you. Whenever you need it.</p>
           <!--        <a href="/community/mission-and-philosophy" target="_blank" rel="noopener noreferrer" class="btn btn-default btn-block hidden-md hidden-lg hidden-xl" role="button">Find out more</a>-->
 <!--          <ul class="text-xs-left mt-3 list-unstyled">-->
 <!--            <li class="buildOption"><span class="mr-2 colored-dot">1.</span>Be radically transparent</li>-->
 <!--            <li class="buildOption py-2"><span class="mr-2 colored-dot">2.</span>Charge as little as possible</li>-->
 <!--            <li class="buildOption"><span class="mr-2 colored-dot">3.</span>Make premium the new normal</li>-->
 <!--          </ul>-->
-          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline hidden-xs hidden-sm btn-lg mt-4" role="button">Find out more</a>
+          <a href="#" class="btn btn-outline hidden-xs hidden-sm btn-lg d-block d-md-inline-block my-4" role="button">Find out more</a>
         </div>
   
         <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-1">
@@ -59,14 +59,14 @@
   }
 
   #customer-support-section .images .customer-support {
-    width: 80%;
+    width: 70%;
     max-width: 480px;
     position: relative;
     z-index: 1;
   }
 
   #customer-support-section .images .city {
-    width: 60%;
+    width: 50%;
     max-width: 390px;
     margin-top: -15%;
     position: relative;
@@ -82,7 +82,7 @@
     width: 159px;
     height: 159px;
   }
-
+  
   .colored-dot {
     color: #00b9ff;
   }
@@ -91,4 +91,38 @@
     font-weight: 800;
     color: #2e4369;
   }
+
+
+  /*Small devices (landscape phones, 576px and up)*/
+  @media (max-width: 767px) {
+
+  .customer-support-title {
+    text-align: center;
+    }
+    .customer-support-text {
+      text-align: center;
+    }
+    
+    .customer-support {
+      margin-top: 10px;
+    }
+    .images {
+      margin-left: 50px;
+    }
+    
+  }
+
+  /*Medium devices (tablets, 768px and up)*/
+  @media (min-width: 768px) and (max-width: 991px) {
+  
+  }
+
+  /*Large devices (desktops, 992px and up)*/
+  @media (min-width: 992px) and (max-width: 1199px) {  }
+
+  /*Extra large devices (large desktops, 1200px and up)*/
+  @media (min-width: 1200px) {  }
+
+
+
 </style>

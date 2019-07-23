@@ -1,5 +1,5 @@
 <template>
-  <section class="py-4 d-lg-none d-md-none d-xl-none">
+  <section class="py-4 d-none d-sm-none d-md-none d-lg-block d-xl-block">
     <div class="container">
       <div class="row py-5">
         <div class="col-12 text-center">
@@ -11,7 +11,7 @@
               <img src="@/assets/img/apple.svg" alt="Apple Logo" class="icons-position">
               <div class="icons-position-text">
                 <span class="small font-weight-bold">Download on the</span>
-                <span class="h2 font-weight-bold">App Store</span>
+                <span class="get_app_one font-weight-bold">App Store</span>
               </div>
             </a>
             
@@ -19,7 +19,7 @@
               <img src="@/assets/img/playstore.svg" alt="GooglePlayStore Logo" class="icons-position">
               <div class="icons-position-text">
                 <span class="small font-weight-bold">Get it on</span>
-                <span class="h2 font-weight-bold">Google Play</span>
+                <span class="get_app_one font-weight-bold">Google Play</span>
               </div>
             </a>
           </div>
@@ -41,10 +41,10 @@
     font-family: 'Cabin', sans-serif;
   }
   
-  .get_app_one{
+  .get_app_one {
     font-weight: 800;
     color: #2e4369;
-    font-size: 42px;
+    font-size: 22px;
   }
   
   .get_app{

@@ -1,104 +1,123 @@
 <template>
-  <section>
-    <div class="container">
-      <h1 class="customer-support-title py-3">Global support in a range of languages<span class="colored-dot">.</span> </h1>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="intro">
-            <img src="@/assets/img/register.svg">
-            <h5>1. Register for free.</h5>
-            <p>Sign up online or in our app for free. All you need is an email address, or a Google or Facebook account.</p>
-          </div>
-        </div>
-      
-        <div class="col-md-4">
-          <div class="intro">
-            <img src="@/assets/img/choose.svg">
-            <h5>2. Choose an amount to send.</h5>
-            <p>Tell us how much you want to send. We’ll show you our fees upfront, and tell you when your money should arrive.</p>
-          </div>
-        </div>
-      
-        <div class="col-md-4">
-          <div class="intro">
-            <img src="@/assets/img/add.svg">
-            <h5>3. Add recipient’s bank details.</h5>
-            <p>Fill in the details of your recipient’s bank account. If you don’t know their details, we can request them for you.</p>
-          </div>
-        </div>
-      
-        <div class="col-md-4">
-          <div class="intro">
-            <img src="@/assets/img/verify.svg">
-            <h5>4. Verify your identity.</h5>
-            <p>For some currencies, or for large transfers, we need a photo of your ID. This helps us keep your money safe.</p>
-          </div>
-        </div>
-      
-        <div class="col-md-4">
-          <div class="intro">
-            <img src="@/assets/img/pay.svg">
-            <h5>5. Pay for your transfer.</h5>
-            <p>Send your money with a bank transfer, or a debit or credit card</p>
-          </div>
-        </div>
-      
-      
-        <div class="col-md-4">
-          <div class="intro">
-            <img src="@/assets/img/that.svg">
-            <h5>6. That’s it.</h5>
-            <p>We’ll handle the rest. You can track your transfer in your account, and we'll tell your recipient it's coming.</p>
-          </div>
-      
-        </div>
-    
+  <div >
+    <div class="accordion" v-bind:class="theme">
+      <div class="header" v-on:click="toggle">
+        <slot name="header">HINT</slot>
+        <i class="fa fa-2x fa-angle-down header-icon" v-bind:class="{ rotate: show }"></i>
       </div>
+      <transition name="accordion"
+                  v-on:before-enter="beforeEnter" v-on:enter="enter"
+                  v-on:before-leave="beforeLeave" v-on:leave="leave">
+        <div class="body" v-show="show">
+          <div class="body-inner">
+            <slot></slot>
+          </div>
+        </div>
+      </transition>
     </div>
-  </section>
+  </div>
+  
+
 </template>
 
 <script>
+  
   export default {
+  
+    props: ['theme'],
+    
+    data() {
+      return {
+        show: false
+      };
+    },
+    
     name: 'SendMoney',
+  
+    methods: {
+      toggle: function() {
+        this.show = !this.show;
+      },
+      // enter: function(el, done) {
+      //   $(el).slideDown(150, done);
+      // },
+      // leave: function(el, done) {
+      //   $(el).slideUp(150, done);
+      // },
+      beforeEnter: function(el) {
+        el.style.height = '0';
+      },
+      enter: function(el) {
+        el.style.height = el.scrollHeight + 'px';
+      },
+      beforeLeave: function(el) {
+        el.style.height = el.scrollHeight + 'px';
+      },
+      leave: function(el) {
+        el.style.height = '0';
+      }
+    }
   }
+  
+  
 </script>
 
 <style scoped>
-  section {
-    background: #eee url('~@/assets/img/HowToSendMoneyBg.svg') no-repeat top center;
-    background-size: cover;
-    padding: 80px 0;
+  @import url('https://fonts.googleapis.com/css?family=Lato');
+  
+  .accordion {
+    max-width: 400px;
+    font-family: Lato;
+    margin-bottom: 20px;
+    
+    background-color: #ec5366;
+    border-radius: 6px;
   }
-  p {
-    text-align: center;
-  }
-
-  h5 {
-    text-align: center;
-    color: #2e4369;
-    font-weight: 800;
-  }
-
-  .intro {
-    box-shadow: 0 0 30px 0 rgba(226, 230, 232, 0.3);
-    background-color: #fff;
-    transition: 0.4s ease-out;
+  
+  .accordion .header {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 40px 0 8px;
     position: relative;
-    left: 0;
-    margin: 10px;
-    padding: 24px;
-    border: none;
-    min-height: 380px;
-    width: 100%;
+    color: #fff;
+    cursor: pointer;
   }
-
-  .customer-support-title {
-    font-weight: 800;
-    color: #2e4369;
-    font-size: 42px;
+  
+  .accordion .header-icon {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    transform: rotate(0deg);
+    transition-duration: 0.3s;
   }
-  .colored-dot {
-    color: #00b9ff;
+  
+  .accordion .body {
+    /*   display: none; */
+    overflow: hidden;
+    background-color: #fff;
+    border: 10px solid #ec5366;
+    border-top: 0;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    transition: 150ms ease-out;
+  }
+  
+  .accordion .body-inner {
+    padding: 8px;
+    overflow-wrap: break-word;
+    /*   white-space: pre-wrap; */
+  }
+  
+  .accordion .header-icon.rotate {
+    transform: rotate(180deg);
+    transition-duration: 0.3s;
+  }
+  
+  .accordion.purple {
+    background-color: #8c618d;
+  }
+  
+  .accordion.purple .body {
+    border-color: #8c618d;
   }
 </style>

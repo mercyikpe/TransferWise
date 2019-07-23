@@ -14,6 +14,7 @@ import 'vue-select/dist/vue-select.css'
 
 Vue.config.productionTip = false
 
+
 Vue.component('v-select', vSelect)
 
 /* eslint-disable no-new */

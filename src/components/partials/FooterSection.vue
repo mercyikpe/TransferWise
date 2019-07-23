@@ -162,7 +162,6 @@
   section {
     /*font-family: 'Cabin', sans-serif;*/
     background: #37517d;
-    padding: 50px 0;
   }
   
   /*show on mobile screen footer */
