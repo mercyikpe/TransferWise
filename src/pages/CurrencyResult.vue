@@ -13,7 +13,7 @@
 
       <ExchangeRates/>
 
-      <endFooter/>
+      <FooterSection/>
 
     </template>
 
@@ -24,19 +24,19 @@ import ExchangeRates from '@/components/partials/ExchangeRates'
 import ConverterResult from '@/components/partials/ConverterResult'
 import OverpayingBank from '@/components/partials/overpayingBank'
 import TopCurrencies from '@/components/partials/topCurrencies'
-import EndFooter from '@/components/partials/endFooter'
 import DefaultLayout from '@/components/layouts/DefaultLayout'
 import AltHeader from '@/components/partials/headers/AltHeader'
 import topNavbar from '@/components/partials/topNavbar'
 import {mapActions, mapMutations} from 'vuex'
+import FooterSection from '../components/partials/FooterSection'
 
 export default {
   name: 'CurrencyResult',
   components: {
+    FooterSection,
     ConverterResult,
     OverpayingBank,
     TopCurrencies,
-    EndFooter,
     DefaultLayout,
     AltHeader,
     topNavbar,

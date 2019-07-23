@@ -1,18 +1,18 @@
 <template>
-  <default-layout>
-    <template v-slot:content>
-      <HomeBanner/>
-      <ComparePrice/>
-      <SendMoney/>
-      <GlobalSupport/>
-      <WhatOurCustomerSay/>
-      <WiredQuotes/>
-      <Map/>
-      <GetTheApp/>
-      <BuildingWithoutBorders/>
+<!--  <default-layout>-->
+<!--    <template v-slot:content>-->
+<!--      <HomeBanner/>-->
+<!--      <ComparePrice/>-->
+<!--      <SendMoney/>-->
+<!--      <GlobalSupport/>-->
+<!--      <WhatOurCustomerSay/>-->
+<!--      <WiredQuotes/>-->
+<!--      <Map/>-->
+<!--      <GetTheApp/>-->
+<!--      <BuildingWithoutBorders/>-->
       <FooterSection/>
-    </template>
-  </default-layout>
+<!--    </template>-->
+<!--  </default-layout>-->
 </template>
 
 <script>

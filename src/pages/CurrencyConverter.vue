@@ -7,7 +7,7 @@
       <CurrencyConverterCalc/>
       <overpayingBank/>
       <topCurrencies/>
-      <endFooter/>
+      <FooterSection/>
     </template>
   </default-layout>
 </template>
@@ -15,17 +15,17 @@
 import CurrencyConverterCalc from '@/components/partials/CurrencyConverterCalc'
 import OverpayingBank from '@/components/partials/overpayingBank'
 import TopCurrencies from '@/components/partials/topCurrencies'
-import EndFooter from '@/components/partials/endFooter'
 import DefaultLayout from '@/components/layouts/DefaultLayout'
 import AltHeader from '@/components/partials/headers/AltHeader'
 import topNavbar from '@/components/partials/topNavbar'
+import FooterSection from '../components/partials/FooterSection'
 export default {
   name: 'CurrencyConverter',
   components: {
+    FooterSection,
     CurrencyConverterCalc,
     OverpayingBank,
     TopCurrencies,
-    EndFooter,
     DefaultLayout,
     AltHeader,
     topNavbar
