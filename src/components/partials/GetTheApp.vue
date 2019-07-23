@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-default py-4">
+  <section class="py-4 d-lg-none d-md-none d-xl-none">
     <div class="container">
       <div class="row py-5">
         <div class="col-12 text-center">
@@ -46,6 +46,7 @@
     color: #2e4369;
     font-size: 42px;
   }
+  
   .get_app{
     font-weight: 800;
     color: #2e4369;

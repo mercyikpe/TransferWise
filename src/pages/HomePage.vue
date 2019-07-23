@@ -1,6 +1,6 @@
 <template>
-<!--  <default-layout>-->
-<!--    <template v-slot:content>-->
+  <default-layout>
+    <template v-slot:content>
 <!--      <HomeBanner/>-->
 <!--      <ComparePrice/>-->
 <!--      <SendMoney/>-->
@@ -8,11 +8,11 @@
 <!--      <WhatOurCustomerSay/>-->
 <!--      <WiredQuotes/>-->
 <!--      <Map/>-->
-<!--      <GetTheApp/>-->
-<!--      <BuildingWithoutBorders/>-->
+      <GetTheApp/>
+      <BuildingWithoutBorders/>
       <FooterSection/>
-<!--    </template>-->
-<!--  </default-layout>-->
+    </template>
+  </default-layout>
 </template>
 
 <script>
