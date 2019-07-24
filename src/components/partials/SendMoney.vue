@@ -3,7 +3,7 @@
     <div class="accordion" v-bind:class="theme">
       <div class="header" v-on:click="toggle">
         <slot name="header">HINT</slot>
-        <i class="fa fa-2x fa-angle-down header-icon" v-bind:class="{ rotate: show }"></i>
+        <i class="arrow down" v-bind:class="{ rotate: show }"></i>
       </div>
       <transition name="accordion"
                   v-on:before-enter="beforeEnter" v-on:enter="enter"
@@ -63,11 +63,9 @@
 </script>
 
 <style scoped>
-  @import url('https://fonts.googleapis.com/css?family=Lato');
   
   .accordion {
     max-width: 400px;
-    font-family: Lato;
     margin-bottom: 20px;
     
     background-color: #ec5366;
@@ -120,4 +118,17 @@
   .accordion.purple .body {
     border-color: #8c618d;
   }
+
+  i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  
 </style>

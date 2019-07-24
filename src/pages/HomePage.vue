@@ -2,8 +2,8 @@
   <default-layout>
     <template v-slot:content>
 <!--      <HomeBanner/>-->
-<!--      <ComparePrice/>-->
-      <accordion/>
+      <ComparePrice/>
+<!--      <accordion/>-->
       <GlobalSupport/>
 <!--      <Testimony/>-->
       <WhatOurCustomerSay/>

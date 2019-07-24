@@ -59,7 +59,7 @@
   }
 
   #customer-support-section .images .customer-support {
-    width: 70%;
+    width: 80%;
     max-width: 480px;
     position: relative;
     z-index: 1;
@@ -107,7 +107,7 @@
       margin-top: 10px;
     }
     .images {
-      margin-left: 50px;
+      margin-left: 40px;
     }
     
   }
