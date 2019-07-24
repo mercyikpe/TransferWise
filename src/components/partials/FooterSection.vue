@@ -23,7 +23,7 @@
     
     
     <footer class="footer pb-5">
-      <div class="container">
+      <div class="container pt-4 pt-sm-4">
         
           <a href="#/" class="logo d-lg-none d-md-none d-xl-none">
             <img src="@/assets/img/logo-footer.svg" alt="" class="d-block mx-auto mb-4" style="width:130px;">
@@ -164,7 +164,6 @@
     background: #37517d;
   }
   
-  /*show on mobile screen footer */
 
   .footer-trust-elements {
     background-color: #37517e;

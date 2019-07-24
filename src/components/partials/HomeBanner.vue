@@ -1,11 +1,12 @@
 <template>
   <main class="banner">
-    <div class="container py-md-12">
+    <div class="container py-5">
       <div class="row full_section">
         <div class="col-sm-10 col-sm-push-1 col-lg-push-0 col-lg-6">
+          
           <div class="text-white">
             <h1 class="text-bold font-weight-bold text-xs-center text-sm-left" >A cheaper, faster way to send money abroad<span class="text-info">.</span></h1>
-            <p class="py-md-9 py-sm-4 join seen "><span>Join over 5 million people who get the real exchange rate with TransferWise. We’re up to <a href="https://transferwise.com/upto8xcheaper" target="_blank">8x cheaper than banks</a>.</span>
+            <p class="py-md-9 py-sm-4 join seen"><span>Join over 5 million people who get the real exchange rate with TransferWise. We’re up to <a href="https://transferwise.com/upto8xcheaper" target="_blank">8x cheaper than banks</a>.</span>
             </p>
             <div class="seen">
               <button class="btn btn-primary seen my-12 d-flex justify-content-space-between introduction-video" type="button">
@@ -17,8 +18,9 @@
                 </div><span class="video-text d-flex align-items-center ml-5">See how we send money</span></button>
             </div>
           </div>
+          
           <div class="row mt-10 seen d-flex">
-            <div class="col-sm-6 mt-5">
+            <div class="col-sm-6 mt-5 d-none">
               <div class="callout-container">
                 <span>
                   <svg class="element__image text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 50">
@@ -27,7 +29,7 @@
                   </span>
                 <h2 class="h4 mt-1">5 million customers</h2><a href="https://www.trustpilot.com/review/transferwise.com" target="_blank"  class="link-callout">Read on Trustpilot <i class="glyphicon glyphicon-chevron-right"></i></a></div>
             </div>
-            <div class="col-sm-6 mt-5">
+            <div class="col-sm-6 mt-5 d-none">
               <div class="tw-new-trust-element callout-container">
                 <span>
                   <svg class="element__image"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 60"><g id="el_FgEewNUKkJ_an_oeMg4ag9e" data-animator-group="true" data-animator-type="0"><g id="el_FgEewNUKkJ_an_uU4kUuboq" data-animator-group="true" data-animator-type="1"><path d="M28.8 53.6h-3.4V22.2c0-4.1-3.3-7.3-7.3-7.3s-7.3 3.2-7.3 7.3v8.5H7.3v-8.5a10.7 10.7 0 0 1 21.4-.6l.1 32z" id="el_FgEewNUKkJ"></path></g></g><g id="el_tgDFFwJ5S2"><g id="el__TfCLs8FIv_an_-X7dfYVN9" data-animator-group="true" data-animator-type="1"><g id="el__TfCLs8FIv_an_Hq9pZE6IR" data-animator-group="true" data-animator-type="2"><path id="el__TfCLs8FIv" d="M3.3 30.3h29.4v25.9H3.3z"></path></g></g><g id="el_SK4UH8Lmy6_an_z3K7pURx4" data-animator-group="true" data-animator-type="1"><path id="el_SK4UH8Lmy6" d="M20.8 41.1c0-1.5-1.2-2.7-2.7-2.7s-2.7 1.2-2.7 2.7c0 .8.4 1.6 1 2.2v5h3.4v-5c.6-.6 1-1.4 1-2.2z"></path></g></g></svg>
@@ -41,7 +43,7 @@
           <div class="calculatory">
             <div data-tracking-id="calculator">
               <div class="form-group form-group-lg m-b-0">
-                <label class="control-label" >You send</label>
+                <label class="control-label pl-3">You send</label>
                 <div class="send-input input-group input-group-lg">
                   <input type="text" id="calculatory-source" value="1,000" class="input-control form-control input-base col-xs-8" autocomplete="off">
                   <span class="input-group-btn amount-currency-select-btn input-btn col-xs-4">
@@ -64,18 +66,23 @@
                 <li>
                   <span class="cost-icon calculatory-breakdown__icon">×</span><span class="calculatory-breakdown-item__left"><a role="button" class="mr-2" tabindex="0"><span class="calculatory-breakdown-rate__value">442.756</span><span class="calculatory-breakdown-rate-graph-icon"><svg viewBox="0 0 11 8" version="1.1" xmlns="http://www.w3.org/2000/svg" id="el_oE6GCMIHr"><defs><linearGradient x1="-12.7227783%" y1="100%" x2="125.65918%" y2="100%" id="linearGradient-1"><stop stop-color="#00B9FE" offset="0%"></stop><stop stop-color="#2ED06F" offset="100%"></stop></linearGradient></defs><g id="el_jjL7heWyEy" fill-rule="evenodd"><g id="el_7RoaOX2MBf"><path d="M6.12919677,0 C6.00679983,0 5.96090098,0.137696558 6.03739907,0.229494263 L7.16957076,1.36166596 L8.63833404,2.83042924 L9.77050574,3.96260093 C9.84700382,4.03909902 10,3.99320017 10,3.87080323 L10,0.137696558 C10,0.06119847 9.93880153,0 9.86230344,0 L6.12919677,0 Z" id="el_xnVmcmD2Ct"></path><polyline id="el_wWgIoPQu5o" points="0 6 3 3 5 5 8 2"></polyline></g></g></svg></span></a>
                   </span><span class="calculatory-breakdown-item__right"><span data-tracking-id="calculator-fixed-rate-tooltip" data-toggle="popover" role="button" tabindex="0">Guaranteed rate</span>
-                  <div class="popover animate in scale-down right" style="top: -65.5px; left: 226px;">
-                      <h3 class="popover-title">Guaranteed rate</h3>
-                      <p class="popover-content m-b-0">You’ll get this rate as long as we receive your 1,000 GBP within the next 24 hours.
-                          <br><a href="https://transferwise.com/help/article/2200504/rate/guaranteed-rate" target="_blank" rel="noopener noreferrer">Learn more</a></p>
-                  </div> <span style="white-space:nowrap"><span>(</span>24<span> hrs)</span></span>
+<!--                  <div class="popover animate in scale-down right" style="top: -65.5px; left: 226px;">-->
+<!--                      <h3 class="popover-title">Guaranteed rate</h3>-->
+<!--                      <p class="popover-content m-b-0">You’ll get this rate as long as we receive your 1,000 GBP within the next 24 hours.-->
+<!--                          <br><a href="https://transferwise.com/help/article/2200504/rate/guaranteed-rate" target="_blank" rel="noopener noreferrer">Learn more</a></p>-->
+<!--                  </div> -->
+                  <span style="white-space:nowrap"><span>(</span>24<span> hrs)</span></span>
                   </span>
                 </li>
               </ul>
               <div class="form-group form-group-lg m-b-0">
-                <!-- <label class="control-label" for="calculatory-target">Recipient gets </label> -->
                 <div class="send-input input-group input-group-lg">
-                  <input type="text" id="calculatory-target" value="440,219.01" class="input-control" autocomplete="off"><span class="input-group-addon input-lg"><span class="tooltip-container" aria-describedby="3vzu7i"><div class="tooltip fade top " role="tooltip" id="3vzu7i" style="top: -122px; left: 169px;"><div class="tooltip-arrow"></div><div class="tooltip-inner">If you need more than 24 hours to pay, click the lock to make sure your recipient gets exactly 440,219.01 NGN.</div></div><a class="calculatory__amount-lock text-muted"><i class="icon icon-unlock"></i></a></span></span><span class="input-group-btn amount-currency-select-btn"><div class="btn-group btn-block dropdown"><button class="btn btn-input btn-input-inverse btn-addon btn-lg dropdown-toggle" type="button" aria-expanded="false"><span><i class="currency-flag currency-flag-ngn hidden-xs"></i>NGN</span><span class="caret"></span></button>
+                  <input type="text" id="calculatory-target" value="440,219.01" class="input-control" autocomplete="off"><span class="input-group-addon input-lg"><span class="tooltip-container" aria-describedby="3vzu7i"><div class="tooltip fade top " role="tooltip" id="3vzu7i" style="top: -122px; left: 169px;">
+                  <div class="tooltip-arrow"></div>
+                  <div class="tooltip-inner">If you need more than 24 hours to pay, click the lock to make sure your recipient gets exactly 440,219.01 NGN.</div></div>
+                  <a class="calculatory__amount-lock text-muted"><i class="icon icon-unlock"></i></a>
+                </span></span><span class="input-group-btn amount-currency-select-btn">
+                  <div class="btn-group btn-block dropdown"><button class="btn btn-input btn-input-inverse btn-addon btn-lg dropdown-toggle" type="button" aria-expanded="false"><span><i class="currency-flag currency-flag-ngn hidden-xs"></i>NGN</span><span class="caret"></span></button>
         </div>
         </span>
                 </div>
@@ -124,28 +131,6 @@
 </script>
 
 <style scoped>
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  .h1,
-  .h2,
-  .h3,
-  .h4,
-  .h5,
-  .h6 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-family: averta, avenir w02, avenir, Helvetica, Arial, sans-serif;
-    font-weight: 600;
-    line-height: 1.2;
-    color: #fff;
-    text-transform: none;
-    letter-spacing: 0
-  }
-  
   .banner{
     padding: 0;
     margin: 0;
@@ -153,9 +138,9 @@
     padding-bottom: 5px;
   }
   
-  .full_section {
-    padding: 190px 0px 100px;
-  }
+  /*.full_section {*/
+  /*  padding: 190px 0px 100px;*/
+  /*}*/
   
   .join {
     font-size: 1.1rem;
@@ -598,7 +583,6 @@
     height: 72px;
     padding: 13px 16px 11px;
     margin-bottom: 0;
-    font-size: 22px;
     font-size: 20px;
     line-height: 32px;
     border-radius: 3px
@@ -1063,87 +1047,87 @@
   }
   
   
-  .popover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1060;
-    width: 276px;
-    padding: 18px 24px;
-    font-family: averta, avenir w02, avenir, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-    text-align: start;
-    text-decoration: none;
-    text-shadow: none;
-    text-transform: none;
-    letter-spacing: normal;
-    word-break: normal;
-    word-spacing: normal;
-    word-wrap: normal;
-    white-space: normal;
-    background-color: #fff;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    border: 1px solid #fff;
-    border-radius: 3px;
-    -webkit-box-shadow: 0 20px 66px 0 rgba(34, 48, 73, .2);
-    box-shadow: 0 20px 66px 0 rgba(34, 48, 73, .2);
-    line-break: auto
-  }
+  /*.popover {*/
+  /*  position: absolute;*/
+  /*  top: 0;*/
+  /*  left: 0;*/
+  /*  z-index: 1060;*/
+  /*  width: 276px;*/
+  /*  padding: 18px 24px;*/
+  /*  font-family: averta, avenir w02, avenir, Helvetica, Arial, sans-serif;*/
+  /*  font-size: 14px;*/
+  /*  font-style: normal;*/
+  /*  font-weight: 400;*/
+  /*  line-height: 24px;*/
+  /*  text-align: left;*/
+  /*  text-align: start;*/
+  /*  text-decoration: none;*/
+  /*  text-shadow: none;*/
+  /*  text-transform: none;*/
+  /*  letter-spacing: normal;*/
+  /*  word-break: normal;*/
+  /*  word-spacing: normal;*/
+  /*  word-wrap: normal;*/
+  /*  white-space: normal;*/
+  /*  background-color: #fff;*/
+  /*  -webkit-background-clip: padding-box;*/
+  /*  background-clip: padding-box;*/
+  /*  border: 1px solid #fff;*/
+  /*  border-radius: 3px;*/
+  /*  -webkit-box-shadow: 0 20px 66px 0 rgba(34, 48, 73, .2);*/
+  /*  box-shadow: 0 20px 66px 0 rgba(34, 48, 73, .2);*/
+  /*  line-break: auto*/
+  /*}*/
   
-  .popover.animate {
-    -webkit-transition: -webkit-transform .25s;
-    -o-transition: -o-transform .25s;
-    transition: transform .25s
-  }
+  /*.popover.animate {*/
+  /*  -webkit-transition: -webkit-transform .25s;*/
+  /*  -o-transition: -o-transform .25s;*/
+  /*  transition: transform .25s*/
+  /*}*/
   
-  .popover.scale-down {
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0)
-  }
+  /*.popover.scale-down {*/
+  /*  -webkit-transform: scale(0);*/
+  /*  -ms-transform: scale(0);*/
+  /*  -o-transform: scale(0);*/
+  /*  transform: scale(0)*/
+  /*}*/
   
-  .popover:before {
-    position: absolute;
-    top: -7px;
-    left: 28px;
-    display: block;
-    width: 14px;
-    height: 14px;
-    content: " ";
-    background-color: inherit;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg)
-  }
+  /*.popover:before {*/
+  /*  position: absolute;*/
+  /*  top: -7px;*/
+  /*  left: 28px;*/
+  /*  display: block;*/
+  /*  width: 14px;*/
+  /*  height: 14px;*/
+  /*  content: " ";*/
+  /*  background-color: inherit;*/
+  /*  -webkit-transform: rotate(45deg);*/
+  /*  -ms-transform: rotate(45deg);*/
+  /*  -o-transform: rotate(45deg);*/
+  /*  transform: rotate(45deg)*/
+  /*}*/
   
-  .popover-title {
-    padding: 0;
-    margin: 0;
-    font-size: 14px;
-    line-height: 24px;
-    color: #2e4369!important;
-    background-color: #fff;
-    border-bottom: 0;
-    border-radius: 2px 2px 0 0
-  }
+  /*.popover-title {*/
+  /*  padding: 0;*/
+  /*  margin: 0;*/
+  /*  font-size: 14px;*/
+  /*  line-height: 24px;*/
+  /*  color: #2e4369!important;*/
+  /*  background-color: #fff;*/
+  /*  border-bottom: 0;*/
+  /*  border-radius: 2px 2px 0 0*/
+  /*}*/
   
-  .popover-content {
-    padding: 0;
-    font-size: 14px;
-    line-height: 24px;
-    color: #829ca9
-  }
+  /*.popover-content {*/
+  /*  padding: 0;*/
+  /*  font-size: 14px;*/
+  /*  line-height: 24px;*/
+  /*  color: #829ca9*/
+  /*}*/
   
-  .popover-content>:last-child {
-    margin-bottom: 0
-  }
+  /*.popover-content>:last-child {*/
+  /*  margin-bottom: 0*/
+  /*}*/
   
   
   [data-toggle=popover]:not(.btn) {

@@ -1,14 +1,14 @@
 <template>
   <default-layout>
     <template v-slot:content>
-<!--      <HomeBanner/>-->
+      <HomeBanner/>
       <ComparePrice/>
 <!--      <accordion/>-->
       <GlobalSupport/>
 <!--      <Testimony/>-->
       <WhatOurCustomerSay/>
       <WiredQuotes/>
-<!--      <Map/>-->
+      <Map/>
       <GetTheApp/>
       <BuildingWithoutBorders/>
       <FooterSection/>

@@ -3,49 +3,73 @@
     <div class="container py-5">
       <div class="row d-flex justify-content-center">
         
-          <div class="col-6 py-3">
-            <h2 class="get_app_one text-white">Trusted all over the World<span class="colored-dot">.</span></h2>
+          <div class="col-6 py-3 d-none d-md-block d-lg-block d-xl-block">
+            <h2 class="get_app_one text-white text-center">Trusted all over the World<span class="colored-dot">.</span></h2>
+            <p>We move over £4 billion every month, and save people and businesses £4 million in hidden fees every day.</p>
+          </div>
+        
+          <div class="col-10 py-3 d-md-none d-lg-none d-xl-none">
+            <h3 class="get_app_one text-white">Trusted all over the World<span class="colored-dot">.</span></h3>
             <p>We move over £4 billion every month, and save people and businesses £4 million in hidden fees every day.</p>
           </div>
           
-  
+          <div class="d-none d-md-block d-lg-block d-xl-block">
           <dl class="row company-statistics hidden-xs pt-4">
             <div class="col-md-6 col-lg-3 tw-statistics-element">
-              <dt class="h1 m-b-0">12 offices</dt>
-              <dd class="h5">around the world</dd>
+              <dt class="h1 mb-0">12 offices</dt>
+              <dd class="h6">around the world</dd>
             </div>
             <div class="col-md-6 col-lg-3 tw-statistics-element">
-              <dt class="h1 m-b-0">£4 billion</dt>
-              <dd class="h5">sent every month</dd>
+              <dt class="h1 mb-0">£4 billion</dt>
+              <dd class="h6">sent every month</dd>
             </div>
             <div class="col-md-6 col-lg-3 tw-statistics-element">
-              <dt class="h1 m-b-0">5 million</dt>
+              <dt class="h1 mb-0">5 million</dt>
               <dd class="h5">customers</dd>
             </div>
             <div class="col-md-6 col-lg-3 tw-statistics-element">
-              <dt class="h1 m-b-0">£1 billion</dt>
+              <dt class="h1 mb-0">£1 billion</dt>
               <dd class="h5">saved by customers every year</dd>
             </div>
           </dl>
-          
-          
-<!--          <p class="get_app_lead">-->
-<!--            People on every continent are choosing TransferWise. <br>-->
-<!--            We are moving over £4 billion every month globally, saving people like you £80m in hidden charges.-->
-<!--            <br>-->
-<!--            The data below represents real transfers made through TransferWise on 22/01/2019. We work out the savings using data collected by an independent organisation-->
-<!--            <a href="#" class="linky">here</a>.-->
-<!--          </p>-->
+          </div>
         </div>
       
         <div class="home-map">
           <div class="tw-animated-map__map">
             <div class="tw-transfer-map-illustration">
-            
+
             </div>
           </div>
         </div>
   
+      <div class="d-md-none d-lg-none d-xl-none">
+      <dl class="row company-statistics pt-4 text-center">
+        <div class="col-md-6 col-lg-3 tw-statistics-element">
+          <dt class="h4 m-b-0">12 offices</dt>
+          <dd class="h6">around the world</dd>
+        </div>
+        
+        <div class="col-md-6 col-lg-3 tw-statistics-element my-3">
+          <dt class="h4 m-b-0">£4 billion</dt>
+          <dd class="h6">sent every month</dd>
+        </div>
+        
+        <div class="col-md-6 col-lg-3 tw-statistics-element">
+          <dt class="h4 m-b-0">5 million</dt>
+          <dd class="h6">customers</dd>
+        </div>
+        
+        <div class="col-md-6 col-lg-3 tw-statistics-element mt-3">
+          <dt class="h4 m-b-0">£1 billion</dt>
+          <dd class="h6">saved by customers every year</dd>
+        </div>
+      </dl>
+      
+      <hr>
+      </div>
+      
+      
       <footer class="mt-4 popular-routes">
         <p class="col-lg-10 col-lg-offset-1 mb-4">We’re available in 59 countries, and we add new currencies all the time. If you think we should add a specific currency, let us know. Be the first to know when we add more by
           <a href="#">signing up to our mailing list</a>.
@@ -53,14 +77,14 @@
         
         <div class="flags-section pt-4">
           <ul class="row list-unstyled m-b-0">
-            <li class="col-sm-6 col-md-4 col-xl-3 mb-2"><a class="btn flag-container pl-3" href="#"><span class="flag flag-eu"></span><span class="ml-3 flag-title">Europe</span></a></li>
-            <li class="col-sm-6 col-md-4 col-xl-3 mb-2"><a class="btn flag-container pl-3" href="#"><span class="flag flag-gb"></span><span class="ml-3 flag-title">United Kingdom</span></a></li>
-            <li class="col-sm-6 col-md-4 col-xl-3 mb-2"><a class="btn flag-container pl-3" href="#"><span class="flag flag-in"></span><span class="ml-3 flag-title">India</span></a></li>
-            <li class="col-sm-6 col-md-4 col-xl-3 mb-2"><a class="btn flag-container pl-3" href="#"><span class="flag flag-us"></span><span class="ml-3 flag-title">United States</span></a></li>
-            <li class="col-sm-6 col-md-4 col-xl-3 mb-2 d-none d-md-block"><a class="btn flag-container pl-3" href="#"><span class="flag flag-br"></span><span class="ml-3 flag-title">Brazil</span></a></li>
-            <li class="col-sm-6 col-md-4 col-xl-3 mb-2 d-none d-md-block"><a class="btn flag-container pl-3" href="#"><span class="flag flag-au"></span><span class="ml-3 flag-title">Australia</span></a></li>
-            <li class="col-sm-6 col-md-4 col-xl-3 mb-2 d-none d-md-none"><a class="btn flag-container pl-3" href="#"><span class="flag flag-ca"></span><span class="ml-3 flag-title">Canada</span></a></li>
-            <li class="col-sm-6 col-md-4 col-xl-3 mb-2 d-none"><a class="btn flag-container pl-3" href="#"><span class="flag flag-th"></span><span class="ml-3 flag-title">Thailand</span></a></li>
+            <li class="col-sm-6 col-md-4 col-xl-3 mb-3"><a class="btn flag-container pl-3 py-2" href="#"><i class="currency-flag currency-flag-gbp hidden-xs"></i><span class="ml-3 flag-title">Europe</span></a></li>
+            <li class="col-sm-6 col-md-4 col-xl-3 mb-3"><a class="btn flag-container pl-3 py-2" href="#"><i class="currency-flag currency-flag-gbp hidden-xs"></i><span class="ml-3 flag-title">United Kingdom</span></a></li>
+            <li class="col-sm-6 col-md-4 col-xl-3 mb-3"><a class="btn flag-container pl-3 py-2" href="#"><i class="currency-flag currency-flag-gbp hidden-xs"></i><span class="ml-3 flag-title">India</span></a></li>
+            <li class="col-sm-6 col-md-4 col-xl-3 mb-3"><a class="btn flag-container pl-3 py-2" href="#"><i class="currency-flag currency-flag-gbp hidden-xs"></i><span class="ml-3 flag-title">United States</span></a></li>
+            <li class="col-sm-6 col-md-4 col-xl-3 mb-3 d-none d-md-block d-lg-block d-xl-block"><a class="btn flag-container pl-3 py-2" href="#"><i class="currency-flag currency-flag-gbp hidden-xs"></i><span class="ml-3 flag-title">Brazil</span></a></li>
+            <li class="col-sm-6 col-md-4 col-xl-3 mb-3 d-none d-md-block d-lg-block d-xl-block"><a class="btn flag-container pl-3 py-2" href="#"><i class="currency-flag currency-flag-gbp hidden-xs"></i><span class="ml-3 flag-title">Australia</span></a></li>
+            <li class="col-sm-6 col-md-4 col-xl-3 mb-3 d-none d-md-none d-lg-block d-xl-block"><a class="btn flag-container pl-3 py-2" href="#"><i class="currency-flag currency-flag-gbp hidden-xs"></i><span class="ml-3 flag-title">Canada</span></a></li>
+            <li class="col-sm-6 col-md-4 col-xl-3 mb-3 d-none d-md-none d-lg-block d-xl-block"><a class="btn flag-container pl-3 py-2" href="#"><i class="currency-flag currency-flag-gbp hidden-xs"></i><span class="ml-3 flag-title">Thailand</span></a></li>
           </ul>
         </div>
         <div class="text-center routes-button">
@@ -90,49 +114,19 @@
     /*background-image: url('~@/assets/img/MapBg.svg');*/
     background-size: cover;
   }
-
-  
-  
-  /*Small devices (landscape phones, 576px and up)*/
-  @media (min-width: 576px) and (max-width: 767px) {
-    .btn-outline {
-      /*display: block;*/
-    }
-  }
-
-  /*Medium devices (tablets, 768px and up)*/
-  @media (min-width: 768px) and (max-width: 991px) {
-    
-  
-    .highlight-part {
-      padding-right: 30px;
-    }
-  }
-
-  /*Large devices (desktops, 992px and up)*/
-  @media (min-width: 992px) and (max-width: 1199px) {  }
-
-  /*Extra large devices (large desktops, 1200px and up)*/
-  @media (min-width: 1200px) {  }
-  
-  
   
   .get_app_one {
     font-weight: 800;
     color: #2e4369;
-    font-size: 42px;
   }
-  
-  .btn-download .icons-position-text {
-    display: inline-block;
-    padding-left: 64px;
-    text-align: left;
+
+  @media (max-width: 768px) {
+    .btn {
+      width:100%;
+    }
   }
-  
-  .btn-download .icons-position {
-    position: absolute;
-    bottom: 15px;
-  }
+
+ 
   
   .btn-download span {
     display: block;
@@ -140,7 +134,7 @@
     color: #fff!important;
   }
   
-  small, .small {
+  small {
     font-size: 14px;
     line-height: 24px;
   }
