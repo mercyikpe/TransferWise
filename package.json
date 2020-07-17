@@ -15,7 +15,7 @@
     "currency-flags": "^1.8.0",
     "flag-icon-css": "^3.3.0",
     "jquery": "^3.4.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "money": "^0.2.0",
     "popper.js": "^1.15.0",
     "vue": "^2.5.2",
